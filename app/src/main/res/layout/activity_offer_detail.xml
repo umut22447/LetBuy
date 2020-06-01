@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfferDetailActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="148dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/seller_item_img"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/item"
+            app:layout_constraintEnd_toEndOf="@+id/seller_item_img"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/seller_item_img"
+            app:layout_constraintTop_toBottomOf="@+id/seller_item_img"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/user_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/price"
+            app:layout_constraintEnd_toEndOf="@+id/user_item_text"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/user_item_text"
+            app:layout_constraintTop_toBottomOf="@+id/user_item_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/user_item_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/swap"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="148dp"
+        android:layout_height="500dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/buyer_item_img"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/item"
+            app:layout_constraintEnd_toEndOf="@+id/buyer_item_img"
+            app:layout_constraintStart_toStartOf="@+id/buyer_item_img"
+            app:layout_constraintTop_toBottomOf="@+id/buyer_item_img"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/offered_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/price"
+            app:layout_constraintEnd_toEndOf="@+id/offered_item_text"
+            app:layout_constraintStart_toStartOf="@+id/offered_item_text"
+            app:layout_constraintTop_toBottomOf="@+id/offered_item_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/offered_item_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/offered_amount"
+            app:layout_constraintEnd_toEndOf="@+id/offered_item_price_text"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintStart_toStartOf="@+id/offered_item_price_text"
+            app:layout_constraintTop_toBottomOf="@+id/offered_item_price_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/offered_amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/textView19"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/your_item"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/offer"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        android:onClick="acceptButtonClicked"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="156dp"
+            android:layout_height="151dp"
+            android:src="@drawable/letbuy_logo" />
+
+        <TableLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userName"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/usernameLogin"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:hint="@string/userName"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/passwordLogin"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_light"/>
+
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:onClick="loginButtonClicked"
+                android:text="@string/Button"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_shape"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:onClick="registerButtonClicked"
+                android:text="@string/register"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+
+
+        </TableLayout>
+
+        <Button
+            android:background="@drawable/feedback"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:onClick="feedBackClicked"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

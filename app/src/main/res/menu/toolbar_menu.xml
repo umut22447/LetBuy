@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/my_offers"
+        android:title="@string/offer"
+        android:icon="@drawable/trade"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/add_item"
+        android:title="@string/add_item"
+        android:icon="@drawable/add_item_icon"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/my_inventory"
+        android:title="@string/my_inventory"
+        android:icon="@drawable/inventory"
+        android:orderInCategory="3"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/my_profile"
+        android:title="@string/myProfile"
+        android:icon="@drawable/my_profile_icon"
+        android:orderInCategory="4"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_exit"
+        android:title="@string/exit"
+        android:icon="@drawable/exit"
+        android:orderInCategory="5"
+        app:showAsAction="ifRoom"/>
+</menu>

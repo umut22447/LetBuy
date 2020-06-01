@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemAddActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:id="@+id/add_item_toolbar"/>
+
+        <ImageView
+            android:id="@+id/imageAddActivity"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/letbuy_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_item_toolbar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/productName"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageAddActivity"
+            app:layout_constraintTop_toBottomOf="@+id/imageAddActivity" />
+
+        <EditText
+            android:id="@+id/productNameAddActivity"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/productType"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/productNameAddActivity"
+            app:layout_constraintTop_toBottomOf="@+id/productNameAddActivity" />
+
+        <Spinner
+            android:id="@+id/productTypeAddActivity"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            android:entries="@array/productType"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/price"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/productTypeAddActivity"
+            app:layout_constraintTop_toBottomOf="@+id/productTypeAddActivity" />
+
+        <EditText
+            android:id="@+id/priceAddActivity"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/description"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/priceAddActivity"
+            app:layout_constraintTop_toBottomOf="@+id/priceAddActivity" />
+
+        <EditText
+            android:id="@+id/descriptionAddActivity"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:layout_width="181dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="52dp"
+            android:onClick="listItemButtonClicked"
+            android:text="@string/listItem"
+            app:layout_constraintEnd_toEndOf="@+id/descriptionAddActivity"
+            app:layout_constraintStart_toStartOf="@+id/descriptionAddActivity"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionAddActivity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

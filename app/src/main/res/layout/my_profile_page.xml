@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/toolbar_main"
+            android:id="@+id/my_profile_toolbar"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/userName"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_gravity="left"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/email"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emailProfile"
+                    android:layout_width="182dp"
+                    android:layout_height="26dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fullName"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fullnameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/adress"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/addressProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/balance"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/balanceProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:background="@android:color/darker_gray"/>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp">
+
+                <ImageButton
+                    android:id="@+id/emailEdit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:textStyle="bold"
+                    android:onClick="emailChangeClicked"/>
+
+                <ImageButton
+                    android:id="@+id/fullnameEdit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:textStyle="bold"
+                    android:onClick="fullnameChangeClicked"/>
+
+                <ImageButton
+                    android:id="@+id/adressEdit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:textStyle="bold"
+                    android:onClick="addressChangedClicked"/>
+
+                <ImageButton
+                    android:id="@+id/balanceEdit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@android:drawable/ic_input_add"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:onClick="addBalanceClicked"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

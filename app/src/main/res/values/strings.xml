@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">LET BUY</string>
+    <string name="userName">Username</string>
+    <string name="password">Password</string>
+    <string name="passwordAgain">Password Again</string>
+    <string name="Button">Login</string>
+    <string name="email">E-mail</string>
+    <string name="fullName">Full Name</string>
+    <string name="adress">Address</string>
+    <string name="register">Register</string>
+    <string name="hasAccount">I have an account</string>
+    <string name="myProfile">MY PROFILE</string>
+    <string name="editPic">Edit Picture</string>
+    <string name="changePass">Change Password</string>
+    <string name="edit">EDIT</string>
+    <string name="balance">Balance</string>
+    <string name="correctLogin">Correct Username and Password</string>
+    <string name="wrongLogin">Username or Password wrong !!!</string>
+    <string name="seller">Seller</string>
+    <string name="productName">Product Name</string>
+    <string name="productType">Product Type</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="buy">Buy</string>
+    <string name="tradeOffer">Offer For Trade</string>
+    <string name="listItem">LIST ITEM</string>
+    <string name="add_item">ADD ITEM</string>
+    <string name="my_profile">MY PROFILE</string>
+
+    <string-array name="emailType">
+        <item>hotmail.com</item>
+        <item>gmail.com</item>
+        <item>yahoo.com</item>
+        <item>stu.yasar.edu.tr</item>
+    </string-array>
+
+    <string-array name="productType">
+        <item>Electronic</item>
+        <item>Car</item>
+        <item>Clothes</item>
+    </string-array>
+
+    <string name="new_value">Please Enter New Value For Your </string>
+    <string name="new_balance_value">Please Enter How Much You Want to Add Your Account</string>
+    <string name="modify">Modify Record</string>
+    <string name="add_balance">Add Balance</string>
+
+    <string name="all_items">ALL ITEMS</string>
+    <string name="electronic">ELECTRONIC</string>
+    <string name="car">CARS</string>
+    <string name="clothes">CLOTHES</string>
+    <string name="offer">Trade Offer</string>
+    <string name="item_detail">ITEM DETAIL</string>
+
+
+    <string name="no_offer">There is no offer for you :(</string>
+
+    <string name="please_select_your_item">Please Select your item that you want to offer for trade.</string>
+
+    <string name="your_item">Your Item</string>
+
+    <string name="item">ITEM</string>
+    <string name="offered_amount">Offered Amount</string>
+    <string name="selected_item">Selected Item : </string>
+    <string name="selected_item_price">Selected Item Price : </string>
+
+    <string name="my_inventory">My Inventory</string>
+    <string name="exit">EXIT</string>
+
+    <string name="you_can_see_your_item">You can see all your item that you buy or trade.</string>
+
+    <string name="successfully_purchased">Item has been successfully purchased.</string>
+</resources>

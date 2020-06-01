@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/letbuy_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userName"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/usernameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordAgain"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/passAgainRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fullName"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/fullnameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/darkblue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/emailRegister"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_shape"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/darkblue"/>
+
+                <Spinner
+                    android:id="@+id/emailSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/emailType"
+                    android:background="@drawable/edit_text_shape"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adress"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/darkblue"/>
+
+            <EditText
+                android:id="@+id/addressRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:onClick="registerButtonClicked"
+                android:background="@drawable/button_shape"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/samePassRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hasAccount"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:onClick="hasAccountClicked"
+                android:textSize="18dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
